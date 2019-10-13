@@ -10,3 +10,22 @@ hr {
   border-width: 5px;
   width: 10%;
 }
+
+h1, h3 {
+  color: #3ec1d3;
+}
+
+img:hover{
+  border-radius: 100%;
+}
+
+/* id 선택자는 한군데 밖에 못쓴다. class 선택자는 어디에 써도 됨
+  class는 여러 클래스를 한번에 적용할 수 있다.
+ */
+.title{
+  color: blue;
+}
+
+#top_title{
+  color: yellow;
+}
