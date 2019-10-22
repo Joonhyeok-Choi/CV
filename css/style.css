@@ -1,6 +1,30 @@
 body{
+  margin: 0;
   background-color: #eaeaea;
 }
+.top_container{
+  margin: 0;
+  padding: 20px;
+  border: solid black 10px;
+  width: 200px;
+  height: 200px;
+}
+.mid_container{
+  margin-left: 260px;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: solid black 20px;
+}
+.bot_container{
+  margin-left: 500px;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border: solid black 10px;
+}
+
+
 /* hr은 위아래좌우 둘러싸는 형태. 그래서 하나의 점들로 만드려면 */
 /* 일단 전체 스타일 없애고 윗쪽만 스타일 넣으면 됨 */
 hr {
