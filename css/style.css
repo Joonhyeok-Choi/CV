@@ -1,29 +1,43 @@
+/* block element는 아예 한 구역을 다 차지해버리고 inline element는 그 주변부만 차지한다.
+inline element는 크기 조정이 안된다.
+block element의 예로는 header tag, p tag, div tag, list tag, form tag가 있고
+inline element는 span, img, a 가 있다.
+저 타입들의 display 속성을 block, inline이렇게 바꿀수 있고 둘의 속성을 혼합한게 inline-block 속성이다.
+none 속성은 아예 없어지게 하는거다. */
+/* position의 기본 속성은 static이고 relative 속성은 그 대상이 원래 있어야할 곳에서 상대적인 위치로 보낸다는거다
+   그래서 position: relative 로 하고 left, top, bottom, right를 해서 조정하면 원래 위치에서 움직이고
+   다른 요소에는 영향을 미치지 않는다.
+ */
 body{
   margin: 0;
   background-color: #eaeaea;
 }
 .top_container{
-  margin: 0;
-  padding: 20px;
-  border: solid black 10px;
-  width: 200px;
-  height: 200px;
+  margin-top: 0;
+  margin-left: 20px;
 }
 .mid_container{
-  margin-left: 260px;
+  /* margin-left: 260px;
   width: 200px;
   height: 200px;
   background-color: red;
-  border: solid black 20px;
+  border: solid black 20px; */
+
 }
 .bot_container{
-  margin-left: 500px;
+  /* margin-left: 500px;
   width: 200px;
   height: 200px;
   background-color: yellow;
-  border: solid black 10px;
+  border: solid black 10px; */
 }
 
+.img1{
+  margin-left: 20px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
 
 /* hr은 위아래좌우 둘러싸는 형태. 그래서 하나의 점들로 만드려면 */
 /* 일단 전체 스타일 없애고 윗쪽만 스타일 넣으면 됨 */
