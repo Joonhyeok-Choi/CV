@@ -6,11 +6,13 @@ inline element는 span, img, a 가 있다.
 none 속성은 아예 없어지게 하는거다. */
 /* position의 기본 속성은 static이고 relative 속성은 그 대상이 원래 있어야할 곳에서 상대적인 위치로 보낸다는거다
    그래서 position: relative 로 하고 left, top, bottom, right를 해서 조정하면 원래 위치에서 움직이고
-   다른 요소에는 영향을 미치지 않는다. 
+   다른 요소에는 영향을 미치지 않는다.
+   absolute 속성은 부모를 기준으로 움직인다.
  */
 body{
   margin: 0;
   background-color: #eaeaea;
+  text-align: center;
 }
 .top_container{
   margin-top: 0;
