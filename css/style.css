@@ -10,13 +10,16 @@ none 속성은 아예 없어지게 하는거다. */
    absolute 속성은 부모를 기준으로 움직인다.
  */
 body{
-  margin: 0;
+  /* margin: 0; */
   background-color: #eaeaea;
   text-align: center;
+  font-family: 'Merriweather', serif;
 }
 .top_container{
-  margin-top: 0;
-  margin-left: 20px;
+  /* margin-top: 0;
+  margin-left: 20px; */
+  position: relative;
+  padding-top: 100px;
 }
 .mid_container{
   /* margin-left: 260px;
@@ -35,10 +38,24 @@ body{
 }
 
 .img1{
-  margin-left: 20px;
-  display: inline-block;
+  position: absolute;
+  right: 300px;
+  top: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.img2{
+  position: absolute;
+  left: 300px;
   width: 200px;
   height: 200px;
+}
+
+.bot_img{
+  position: relative;
+  top: 250px;
+  width: 400px;
 }
 
 /* hr은 위아래좌우 둘러싸는 형태. 그래서 하나의 점들로 만드려면 */
@@ -51,8 +68,10 @@ hr {
   width: 10%;
 }
 
-h1, h3 {
+h1{
   color: #3ec1d3;
+  margin-top: 3px;
+  font-family: 'Sacramento', cursive;
 }
 
 img:hover{
