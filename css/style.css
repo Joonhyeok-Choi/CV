@@ -11,13 +11,13 @@ none 속성은 아예 없어지게 하는거다. */
  */
 body{
   /* margin: 0; */
-  background-color: #eaeaea;
   text-align: center;
   font-family: 'Merriweather', serif;
 }
 .top_container{
   /* margin-top: 0;
   margin-left: 20px; */
+  background-color: #E4F9F5;
   position: relative;
   padding-top: 100px;
 }
@@ -36,9 +36,16 @@ body{
   background-color: yellow;
   border: solid black 10px; */
 }
+.profile_img{
+  margin-top: 10px;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
 
 .img1{
   position: absolute;
+  border-radius: 100%;
   right: 300px;
   top: 50px;
   width: 100px;
@@ -47,13 +54,23 @@ body{
 
 .img2{
   position: absolute;
+  border-radius: 100%;
   left: 300px;
-  width: 200px;
-  height: 200px;
+  top: 50px;
+  width: 100px;
+  height: 100px;
+}
+.smartburger{
+  width: 360px;
+  height: 360px;
+}
+.burgermap{
+  width: 470px;
+  height: 565px;
 }
 
 .bot_img{
-  position: relative;
+  position: absolute;
   top: 250px;
   width: 400px;
 }
@@ -74,9 +91,9 @@ h1{
   font-family: 'Sacramento', cursive;
 }
 
-img:hover{
+/* img:hover{
   border-radius: 100%;
-}
+} */
 
 /* id 선택자는 한군데 밖에 못쓴다. class 선택자는 어디에 써도 됨
   class는 여러 클래스를 한번에 적용할 수 있다.
